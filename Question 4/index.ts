@@ -1,4 +1,3 @@
-let famouseAuthor: string = "Bruce Lee";
 let quote: string = "Be Water, My Friend.\n" +
 "Empty your mind.\n" +
 "Be formless, shapeless, like water.\n" +
@@ -8,4 +7,4 @@ let quote: string = "Be Water, My Friend.\n" +
 "Now water can flow or it can crash.\n" +
 "Be water, my friend."
 
-console.log(famouseAuthor+ ' once said,"' + quote +'"'); 
+console.log('Bruce Lee once said,"' + quote +'"'); 
