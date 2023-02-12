@@ -1,12 +1,14 @@
 "use strict";
-let guestList = ['Muhammad', 'Usman', 'Umar'];
-const invitation = (guest) => {
-    console.log(`Dear ${guest},
-        I hope this message finds you well. I am writing to formally extend an invitation to a dinner I am hosting in the near future. I would be honored to have you as my guest, and I am sure that we could have an interesting and enlightening conversation.
-        Please let me know if you are available and if you would be interested in joining me for this occasion.
-        Best regards,
-        Rehan Ahmed`);
-};
-for (const guest of guestList) {
-    invitation(guest);
-}
+const guests = [
+    { name: "Muhammad", deceased: false },
+    { name: "Usman", deceased: false },
+    { name: "kashif", deceased: true },
+];
+guests.forEach((guest) => {
+    let message = `Dear ${guest.name},\n`;
+    if (guest.deceased) {
+        message += "I know you are no longer with us, but if you were, ";
+    }
+    message += `I would be honored if you could join me for dinner. Your contributions to society have inspired me and I would love the opportunity to discuss them with you in person.\n`;
+    console.log(message);
+});
