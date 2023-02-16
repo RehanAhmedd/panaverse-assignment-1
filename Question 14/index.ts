@@ -14,6 +14,7 @@ guests.forEach((guest) => {
         if (guest.deceased) {
                 message += "I know you are no longer with us, but if you were, ";
         }
-        message += `I would be honored if you could join me for dinner. Your contributions to society have inspired me and I would love the opportunity to discuss them with you in person.\n`;
+        message += `I would be honored if you could join me for dinner. Your contributions to society have inspired me 
+        and I would love the opportunity to discuss them with you in person.\n`;
         console.log(message);
 });
