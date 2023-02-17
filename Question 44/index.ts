@@ -1,15 +1,7 @@
-function make_album(artist: string, title: string, tracks?: number): Record<string, string | number> {
-  const album: Record<string, string | number> = {
-    "artist": artist,
-    "title": title,
-  };
-  if (tracks) {
-    album["tracks"] = tracks;
-  }
-  return album;
+function makeSandwich(...ingredients: string[]): void {
+  console.log(`Making a sandwich with: ${ingredients.join(", ")}`);
 }
 
-// Example calls to make_album():
-console.log(make_album("Artist 1", "Album 1"));
-console.log(make_album("Artist 2", "Album 2", 10));
-console.log(make_album("Artist 3", "Album 3", 15));
+makeSandwich("ham", "cheese", "lettuce"); // Making a sandwich with: ham, cheese, lettuce
+makeSandwich("turkey", "bacon"); // Making a sandwich with: turkey, bacon
+makeSandwich("peanut butter", "jelly"); // Making a sandwich with: peanut butter, jelly
